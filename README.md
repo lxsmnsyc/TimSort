@@ -53,10 +53,28 @@ export class TimSort{
     static sort(a, c)
 }
 ```
+Or you can just import the class itself
+```js
+import {TimSort} from "./timsort.js";
+```
 
+## Usage
+```js
+TimSort.sort(arr, c);
+```
 The implementation of TimSort uses and only allows typed arrays, this does not include Object types, for better performances. Represent the array in typed arrays for much faster sorting.
 
 The comparator function passed on the sorting function is a Number function that accepts two arguments. 
-If the comparator(a, b) is less than 0, a comes first before b.
-if the comparator(a, b) is greater than 0, b comes first before a.
-if the comparator(a, b) is equal to 0, places of the values are retained.
+* if the comparator(a, b) is less than 0, a comes first before b.
+* if the comparator(a, b) is greater than 0, b comes first before a.
+* if the comparator(a, b) is equal to 0, places of the values are retained.
+
+## Example
+The example is included in the main.js file and renders its result on the index.html.
+The example sorts 1024 data of unique, semi-unique, almost-sorted and reversed arrays. It also display the time it took for the sorting algorithm to finish(by using the performance.now() function, see https://developer.mozilla.org/en-US/docs/Web/API/Performance/now)
+
+
+## License
+Since the original implementation was just reimplemented here, I would not take ownership of this code, thus this implementation is licensed in GLWTPL or the ["Good Luck With That Public License"](https://github.com/me-shaon/GLWTPL/blob/master/LICENSE) 
+
+
