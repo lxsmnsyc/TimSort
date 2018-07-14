@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+	<head>
+		<!-- Set character encoding for the document -->
+		<meta charset="utf-8">
+		
+		<!-- Viewport for responsive web design -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	</head>
+	<body>
+		<style>
+			p {
+				width: 100vw;
+				word-wrap: break-word;
+			}
+		</style>
+		<h3>Unsorted Unique Data(length = 1024)</h3>
+		<canvas id="p1" width="1024" height="1024"></canvas>
+		<h3>Sorted Unique Data(length = 1024)</h3>
+		<canvas id="p2" width="1024" height="1024"></canvas>
+		<h3 id="time1"></h3>
+		<h3>Unsorted Semi-Unique Data(length = 1024)</h3>
+		<canvas id="p3" width="1024" height="1024"></canvas>
+		<h3>Sorted Semi-Unique Data(length = 1024)</h3>
+		<canvas id="p4" width="1024" height="1024"></canvas>
+		<h3 id="time2"></h3>
+		<h3>Unsorted Almost Sorted Data(length = 1024)</h3>
+		<canvas id="p5" width="1024" height="1024"></canvas>
+		<h3>Sorted Almost Sorted Data(length = 1024)</h3>
+		<canvas id="p6" width="1024" height="1024"></canvas>
+		<h3 id="time3"></h3>
+		<h3>Unsorted Reversed Data(length = 1024)</h3>
+		<canvas id="p7" width="1024" height="1024"></canvas>
+		<h3>Sorted Reversed Data(length = 1024)</h3>
+		<canvas id="p8" width="1024" height="1024"></canvas>
+		<h3 id="time4"></h3>
+		<script type="module" src="timsort.js"></script>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
