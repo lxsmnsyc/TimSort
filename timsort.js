@@ -836,7 +836,7 @@ export class TimSort{
      */
     static sortRange(a, lo, hi, c){
         raise(!isNumber(lo), "ArgumentTypeException: parameter lo(" + lo + ") is not a valid number.");
-        raise(!isNumber(hi), "ArgumentTypeException: parameter lo(" + hi + ") is not a valid number.");
+        raise(!isNumber(hi), "ArgumentTypeException: parameter hi(" + hi + ") is not a valid number.");
         if (typeof c !== "function") {
             insertionSort(a, lo, hi, (a, b) => a - b);
             return;
